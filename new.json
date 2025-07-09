@@ -1,0 +1,52 @@
+{
+  "Information": [
+    {
+      "id": "de4c",
+      "name": "dev",
+      "surname": "developer",
+      "age": "14",
+      "bio": "https://avatars.mds.yandex.net/i?id=4c887a8665c32510352b05aa7dbd4171_l-8497474-images-thumbs&n=13",
+      "bios": "just chill"
+    },
+    {
+      "id": "7491",
+      "name": "Ziyobek",
+      "surname": "Mirzamidinov",
+      "age": "12",
+      "bio": "https://avatars.mds.yandex.net/i?id=0176646ed26d75a889af540b6d2cae25_l-7059721-images-thumbs&n=13",
+      "bios": "Ziyobek pythonni yaxshi ko'radi.Kelajakda ajoyib backendchi bo'lmoqchi"
+    },
+    {
+      "id": "9f4c",
+      "name": "Ziyobek",
+      "surname": "Mirzamidinov",
+      "age": "12",
+      "bio": "https://avatars.mds.yandex.net/i?id=0176646ed26d75a889af540b6d2cae25_l-7059721-images-thumbs&n=13",
+      "bios": "Ziyobek pythonni yaxshi ko'radi.Kelajakda ajoyib backendchi bo'lmoqchi"
+    },
+    {
+      "id": "05d3",
+      "name": "Ziyobek",
+      "surname": "Mirzamidinov",
+      "age": "12",
+      "bio": "https://avatars.mds.yandex.net/i?id=0176646ed26d75a889af540b6d2cae25_l-7059721-images-thumbs&n=13",
+      "bios": "Ziyobek pythonni yaxshi ko'radi.Kelajakda ajoyib backendchi bo'lmoqchi"
+    },
+    {
+      "id": "ba6e",
+      "name": "asd",
+      "surname": "asdas",
+      "age": "asd",
+      "bio": "https://i.pinimg.com/736x/d3/2c/43/d32c4358c1f41684b4732068339c4369.jpg",
+      "bios": "tosh davri"
+    },
+    {
+      "id": "709c",
+      "name": "asd",
+      "surname": "asdas",
+      "age": "asd",
+      "bio": "https://i.pinimg.com/736x/d3/2c/43/d32c4358c1f41684b4732068339c4369.jpg",
+      "bios": "tosh davri"
+    }
+  ]
+}

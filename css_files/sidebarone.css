@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open-Sans", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    background: rgb(240, 240, 241);
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 15%;
+    padding: 10px 20px;
+    border: 0.5px solid gray;
+    box-shadow: 30px -30px -30px 30px black;
+}
+
+.sidebar_nav {
+    display: flex;
+    gap: 10px;
+    padding: 5px 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.first_barlist {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(61, 60, 60);
+}
+
+
+
+.profile_logo {
+    color: rgb(44, 43, 43);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-top: 5px;
+}
+
+.profile_text {
+    color: rgb(124, 143, 172);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 5px;
+}
+
+
+.dashtitle {
+    color: rgb(90, 106, 133);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-left: 10px;
+
+}
+
+.second_barlist {
+    margin-top: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(61, 60, 60);
+}
+
+.third_barlist {
+    border-bottom: 1px solid rgb(61, 60, 60);
+    margin-top: 10px;
+}
+
+.fourth_barlist {
+    border-bottom: 1px solid rgb(61, 60, 60);
+    margin-top: 10px;
+}
+
+.dashlist {
+    padding: 10px 20px;
+}
+
+.sidebar_item {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px 20px 5px 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.sidebar_item1 {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px 20px 5px 5px;
+    border-radius: 5px;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(53, 90, 211), rgb(44, 44, 187));
+}
+
+
+
+.item_texts {
+    color: rgb(90, 106, 133);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.item_texts1 {
+    color: rgb(247, 248, 250);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.item_title {
+    color: rgb(90, 106, 133);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.item_text {
+    color: rgb(124, 143, 172);
+    font-size: 10px;
+    font-weight: 400;
+    width: 100%;
+}
+
+
+.five_barlist {
+    width: 98%;
+    background-color: rgb(203, 212, 214);
+    display: flex;
+    padding: 20px 20px;
+    margin: auto;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 35px;
+    border-bottom: 1px solid rgb(61, 60, 60);
+
+}
+
+.unlim_title {
+    color: rgb(90, 106, 133);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 180%;
+    margin-top: 15px;
+    width: 50%;
+}
+
+.unlim_btn {
+    border-radius: 3px;
+    /* Light Theme/Primary/Primary */
+    background: rgb(93, 135, 255);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 140%;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.rocet {
+    position: absolute;
+    left: 120px;
+    top: 100%;
+}
+
+
+
+/* MAIN */
+
+.main {
+    width: 85%;
+    background: linear-gradient(135deg, rgb(219, 213, 213), rgb(231, 222, 222));
+}
+
+.addInfo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: 8vh;
+}
+
+#name {
+    padding: 10px 30px;
+    border-radius: none;
+    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+    border-radius: 5px;
+
+}
+
+#name::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+#surname {
+    padding: 10px 30px;
+    border-radius: none;
+    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+    border-radius: 5px;
+}
+
+#surname::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+#age {
+    padding: 10px 30px;
+    border-radius: none;
+    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+    border-radius: 5px;
+}
+
+#age::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+#bio {
+    padding: 10px 30px;
+    border-radius: none;
+    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+    border-radius: 5px;
+}
+
+#bio::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+#bios {
+    padding: 10px 30px;
+    border-radius: none;
+    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+    border-radius: 5px;
+}
+
+#bios::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+
+
+
+
+#addBtn {
+    padding: 10px 40px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgb(86, 86, 173), rgb(67, 153, 139));
+    color: white;
+    border: none;
+    box-shadow: 30px -30px 30px -30px black;
+}
+
+#addBtn:hover {
+    scale: 1.030;
+}
+
+
+#humansDiv {
+    width: 95%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.td {
+    margin-top: 30px;
+    padding: 10px 15px;
+    width: 30%;
+    border-radius: 8px;
+    background-color: rgb(255, 253, 253);
+    box-shadow: 30px -30px 30px -30px black;
+}
+
+.td::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: var(--border-gradient);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.td:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 35px var(--card-shadow);
+}
+
+.tdname {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tdage {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tdbio {
+    width: 80%;
+}
+
+.tdbios {
+    margin-top: 10px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.readMorebtn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(34, 168, 34);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.readMorebtn:active {
+    scale: 1.030;
+}

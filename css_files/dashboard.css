@@ -99,6 +99,7 @@
     padding: 10px 20px 5px 5px;
     border-radius: 5px;
     align-items: center;
+    text-decoration: none;
 }
 
 .item_texts {

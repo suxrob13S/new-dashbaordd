@@ -33,7 +33,7 @@ fetch('http://localhost:3000/Information/' + id).then(res => res.json()).then(da
 
     const tdbios = document.createElement("h4")
     tdbios.className = "tdbios"
-    tdbios.innerHTML = 'About:' + data.bios
+    tdbios.innerHTML = 'Email:' + data.bios + "@gmail.com"
     Aboutdiv.append(tdbios)
 
 

@@ -94,6 +94,7 @@
 }
 
 .sidebar_item {
+     text-decoration: none;
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -103,6 +104,7 @@
 }
 
 .sidebar_item1 {
+    text-decoration: none;
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -191,76 +193,88 @@
 
 .main {
     width: 85%;
-    background: linear-gradient(135deg, rgb(219, 213, 213), rgb(231, 222, 222));
+    background: linear-gradient(135deg, rgb(250, 248, 248), rgb(161, 156, 156), rgb(122, 117, 117));
 }
 
 .addInfo {
-    width: 80%;
-    margin: auto;
     display: flex;
-    gap: 20px;
-    padding: 20px;
+    gap: 50px;
+    padding:20px 30px;
     height: 8vh;
+     width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+    opacity: 0.9;
 }
 
 #name {
-    padding: 10px 30px;
+    color: white;
+    padding: 20px 30px;
     border-radius: none;
-    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+    background: linear-gradient(135deg, rgb(13, 38, 182), rgb(146, 137, 221));
     border-radius: 5px;
-
+    border: none;
 }
 
 #name::placeholder {
-    color: black;
+    color: rgb(250, 248, 248);
     font-size: 15px;
 }
 
 #surname {
-    padding: 10px 30px;
+    color: white;
+    padding: 20px 30px;
     border-radius: none;
-    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+     background: linear-gradient(135deg, rgb(13, 38, 182), rgb(146, 137, 221));
     border-radius: 5px;
+    border: none;
 }
 
 #surname::placeholder {
-    color: black;
+    color: rgb(252, 248, 248);
     font-size: 15px;
 }
 
 #age {
-    padding: 10px 30px;
+    color: white;
+    padding: 20px 30px;
     border-radius: none;
-    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+     background: linear-gradient(135deg, rgb(13, 38, 182), rgb(146, 137, 221));
     border-radius: 5px;
+    border: none;
 }
 
 #age::placeholder {
-    color: black;
+    color: rgb(252, 249, 249);
     font-size: 15px;
 }
 
 #bio {
-    padding: 10px 30px;
+    color: white;
+    padding: 20px 30px;
     border-radius: none;
-    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+    background: linear-gradient(135deg, rgb(13, 38, 182), rgb(146, 137, 221));
     border-radius: 5px;
+    border: none;
 }
 
 #bio::placeholder {
-    color: black;
+    color: rgb(252, 247, 247);
     font-size: 15px;
 }
 
 #bios {
-    padding: 10px 30px;
+    color: white;
+    padding: 20px 30px;
     border-radius: none;
-    background: linear-gradient(135deg, rgb(169, 169, 235), rgb(188, 243, 234));
+    background: linear-gradient(135deg, rgb(13, 38, 182), rgb(146, 137, 221));
     border-radius: 5px;
+    border: none;
 }
 
 #bios::placeholder {
-    color: black;
+    color: rgb(253, 252, 252);
     font-size: 15px;
 }
 
@@ -269,9 +283,9 @@
 
 
 #addBtn {
-    padding: 10px 40px;
+    padding: 10px 30px;
     border-radius: 5px;
-    background: linear-gradient(135deg, rgb(86, 86, 173), rgb(67, 153, 139));
+    background-color: rgb(30, 32, 177);
     color: white;
     border: none;
     box-shadow: 30px -30px 30px -30px black;
@@ -289,15 +303,18 @@
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
+     border-top: 1px solid black;
+    
 }
 
 .td {
-    margin-top: 30px;
+    margin-top: 90px;
     padding: 10px 15px;
     width: 30%;
     border-radius: 8px;
     background-color: rgb(255, 253, 253);
     box-shadow: 30px -30px 30px -30px black;
+   
 }
 
 .td::before {
@@ -341,16 +358,17 @@
 
 .readMorebtn {
     margin-top: 10px;
-    padding: 10px 30px;
+    padding: 16px 30px;
     width: 100%;
     border-radius: 5px;
-    background-color: rgb(34, 168, 34);
     border: none;
     font-size: 16px;
     font-weight: 600;
     color: white;
+     background:  linear-gradient(135deg,rgb(13, 38, 182),rgb(30, 28, 145));
 }
 
 .readMorebtn:active {
     scale: 1.030;
 }
+

@@ -42,7 +42,7 @@ function render() {
             trE.append(tdname)
 
             const tdprice = document.createElement("h4")
-            tdprice.className = "tdprice"
+            tdprice.className = "tdsurname"
             tdprice.innerHTML = "Surname: " + data[i].surname
             trE.append(tdprice)
 

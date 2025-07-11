@@ -73,6 +73,13 @@
 
 }
 
+
+.profileimg{
+    width: 40%;
+    border-radius: 60px;
+
+}
+
 .second_barlist {
     margin-top: 20px;
     margin-top: 10px;
@@ -101,9 +108,11 @@
     padding: 10px 20px 5px 5px;
     border-radius: 5px;
     align-items: center;
+    cursor: pointer;
 }
 
 .sidebar_item1 {
+    cursor: pointer;
     text-decoration: none;
     display: flex;
     gap: 10px;
@@ -309,8 +318,8 @@
 
 .td {
     margin-top: 90px;
-    padding: 10px 15px;
-    width: 30%;
+    padding:5px;
+    width: 25%;
     border-radius: 8px;
     background-color: rgb(255, 253, 253);
     box-shadow: 30px -30px 30px -30px black;
@@ -335,25 +344,31 @@
 }
 
 .tdname {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin:10px 40px;
 }
 
 .tdage {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin:10px 40px;
 }
 
+.tdsurname {
+    margin:10px 40px;
+}
+
+
 .tdbio {
-    width: 80%;
+    width: 90%;
+    margin:10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .tdbios {
-    margin-top: 10px;
     max-width: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: normal;
+     margin:10px 40px;
 }
 
 .readMorebtn {

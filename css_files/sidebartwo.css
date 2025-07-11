@@ -37,6 +37,11 @@
     font-weight: 700;
     line-height: 20px;
 }
+.profileimg{
+    width: 40%;
+    border-radius: 60px;
+
+}
 
 .first_barlist {
     margin-top: 20px;
@@ -93,6 +98,7 @@
 }
 
 .sidebar_item {
+    cursor: pointer;
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -102,7 +108,7 @@
     text-decoration: none;
 }
 .sidebar_item1 {
-    
+    cursor: pointer;
     display: flex;
     gap: 10px;
     margin-top: 10px;

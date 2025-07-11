@@ -21,6 +21,53 @@ const bio = document.getElementById('bio')
 const bios = document.getElementById('bios')
 const addBtn = document.getElementById('addBtn')
 const humansDiv = document.getElementById('humansDiv')
+const div_btns = document.getElementById('div_btns')
+const addInfo = document.getElementById('addInfo')
+
+
+
+function DeleteUser(e, id) {
+    e.preventDefault()
+    fetch('http://localhost:3000/Information/' + id, {
+        method: "DELETE"
+    })
+}
+
+function UpdateInfo(e,id) {
+    e.preventDefault()
+
+    let Information = {
+        name: name1.value,
+        surname: surname.value,
+        age: age.value,
+        bio: bio.value,
+        bios: bios.value
+    }
+
+    fetch("http://localhost:3000/Information/" + id, {
+        method: 'PUT',
+        body:JSON.stringify(Information)
+    })
+}
+function UpdateUser(user) {
+    name1.value = user.name
+    surname.value = user.surname
+    age.value = user.age
+    bio.value = user.bio
+    bios.value = user.bios
+
+
+
+    const NewUpdateBtn = document.createElement('button')
+    NewUpdateBtn.innerHTML = "Update"
+    NewUpdateBtn.className = "newUpdatebtn"
+    addInfo.append(NewUpdateBtn)
+
+    NewUpdateBtn.addEventListener('click', (e) => UpdateInfo(e,user.id))
+
+}
+
+
 
 function render() {
     fetch('http://localhost:3000/Information').then(res => res.json()).then(data => {
@@ -34,6 +81,7 @@ function render() {
             const tdbio = document.createElement("img")
             tdbio.className = "tdbio"
             tdbio.src = data[i].bio
+            tdbio.alt = "Hers is a photo"
             trE.append(tdbio)
 
             const tdname = document.createElement("h4")
@@ -64,6 +112,25 @@ function render() {
                 window.location.href = "id.html?id=" + data[i].id
             })
 
+
+            const UpdateBtn = document.createElement('button')
+            UpdateBtn.innerHTML = "Update"
+            UpdateBtn.className = "Updatebtn"
+            trE.append(UpdateBtn)
+            UpdateBtn.addEventListener('click', () => UpdateUser(data[i]))
+
+
+            const Delatebtn = document.createElement('button')
+            Delatebtn.innerHTML = "Delete"
+            Delatebtn.className = "Deletebtn"
+            trE.append(Delatebtn)
+
+
+            Delatebtn.addEventListener('click', (e) => DeleteUser(e, data[i].id))
+
+
+
+
         }
 
 
@@ -81,7 +148,7 @@ function adder() {
         surname: surname.value,
         age: age.value,
         bio: bio.value,
-        bios:bios.value
+        bios: bios.value
     }
 
     fetch("http://localhost:3000/Information", {
@@ -94,6 +161,11 @@ function adder() {
 }
 
 addBtn.addEventListener('click', adder)
+
+
+
+
+
 
 
 
